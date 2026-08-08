@@ -79,3 +79,8 @@ vim.keymap.set({ "n", "x" }, "}", "{")
 vim.keymap.set('n', '<leader>rl', '<cmd>LspRestart<CR>', { desc = "Restart LSP Server" })
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<c-r><c-w>\>/<c-r><c-w>/gi<left><left><left>]])
+
+vim.keymap.set("n", "<leader>t", function()
+    vim.cmd("botright 10split")
+    vim.cmd("terminal")
+end)

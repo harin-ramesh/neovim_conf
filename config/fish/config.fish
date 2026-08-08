@@ -10,4 +10,7 @@ end
 # opencode
 fish_add_path /home/harin/.opencode/bin
 alias vim nvim
+alias open xdg-open
 
+# Pi
+fish_add_path "/home/harin/.local/share/pi-node/node-v22.23.1-linux-x64/bin"
